@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>5月3日（土）　アカペラ漬け　マチネ | SALOA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- ライトボックスの構造 -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="拡大画像">
+</div>
+<body>
+<script>
+  document.querySelectorAll('.thumb img').forEach(img => {
+    img.addEventListener('click', e => {
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.src = e.target.src;
+      lb.style.display = 'flex';
+    });
+  });
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+</script>
+
+  <header>
+    <h1>5月3日（土）　アカペラ漬け　マチネ</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="history.html">出演履歴</a></li>
+        <li><a href="form.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+<section class="event-gallery">
+  <h2>出演の様子</h2>
+  <div class="gallery-grid">
+    <div class="thumb">
+      <img src="images/アカペラ漬けマチネ/アカペラ漬け①.jpg" alt="アカペラ漬け①">
+    </div>
+    <div class="thumb">
+      <img src="images/アカペラ漬けマチネ/アカペラ漬け②.jpg" alt="アカペラ漬け②">
+    </div>
+    <div class="thumb">
+      <img src="images/アカペラ漬けマチネ/アカペラ漬け③.jpg" alt="アカペラ漬け③">
+    </div>
+    <div class="thumb">
+      <img src="images/アカペラ漬けマチネ/アカペラ漬け④.jpg" alt="アカペラ漬け④">
+    </div>
+  </div>
+
+      <h2>出演動画</h2>
+      <p>2025年5月3日（土）にアカペラ漬け　マチネに出演した様子です。</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/　" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
